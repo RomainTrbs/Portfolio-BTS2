@@ -24,6 +24,25 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Style personnalisé pour changer la couleur des flèches du carousel */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black; /* Change la couleur des flèches en noir */
+        }
+        .certification-text {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .testimonial-carousel img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -44,8 +63,9 @@
                 <!-- <a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#testimonial" class="nav-item nav-link">Review</a> -->
-                <a href="#blog" class="nav-item nav-link">Veille informatique</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#projets" class="nav-item nav-link">Projets Réalisés</a>
+                <a href="#veille" class="nav-item nav-link">Veille Technologiques</a>
+                <a href="#certifications" class="nav-item nav-link">Certifications</a>
             </div>
         </div>
     </nav>
@@ -109,7 +129,7 @@
                     <p>je suis Romain TIRBOIS et je suis actuellement étudiant en BTS SIO au lycée Notre-dame de la providence. Je suis spécialisé dans la création d'applications web et de sites web, mais j'ai égalment des connaisances dans le domaine de la cybersécurité.</p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Nom: <span class="text-secondary">Romain TIRBOIS</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Date de naissance: <span class="text-secondary">6 April 2005</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Date de naissance: <span class="text-secondary">6 Avril 2005</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Diplôme: <span class="text-secondary">Bac STMG</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">Aucune</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Téléphone: <span class="text-secondary">07 06 05 04 03</span></h6></div>
@@ -323,91 +343,10 @@
      Services End -->
 
 
-    <!-- Portfolio Start 
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     Portfolio End 
+   
 
 
-     Testimonial Start 
+     <!-- Testimonial Start 
     <div class="container-fluid py-5" id="testimonial">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -443,38 +382,30 @@
             </div>
         </div>
     </div>
-    Testimonial End
- -->
+    Testimonial End -->
+
 
 
 
 
     <!-- Blog Start -->
-    <div class="container-fluid pt-5" id="blog">
+    <!-- <div class="container-fluid pt-5" id="blog">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Veille informatique</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Veilles récentes</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projets</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Projets Réalisées</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
                     </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                    <h5 class="font-weight-medium mb-4">Atedi - Micro-Informatiques Services</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">En Savoir Plus</a>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
                     </div>
                     <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
@@ -482,90 +413,303 @@
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
                     </div>
                     <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- Section Projets -->
+    <div class="container-fluid pt-5" id="projets">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projets</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Projets Réalisés</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/atedi.png" alt="">
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Atedi - Micro-Informatiques Services</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="#" data-toggle="modal" data-target="#project1Modal">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/Actemium-1.png" alt="">
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Planning - ACTEMIUM ST-LO</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="#" data-toggle="modal" data-target="#project2Modal">En Savoir Plus</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Commande - THIBAUT Vire</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="#" data-toggle="modal" data-target="#project3Modal">En Savoir Plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Atedi - Micro-Informatiques Services</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ce logiciel est destiné à l'organisation Micro-Informatiques Services. Le but est de pouvoir créer des interventions que l'on associe à des clients. Cela va permettre de gérer plus facilement les différentes interventions qu'ils doivent réaliser, que ce soit des réparations, des nettoyages ou autres. Avec toutes les informations saisies, on pourra télécharger un PDF, qui peut servir de compte-rendu ou de devis.</p>
+                    <div id="project1Carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/Atedi-1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Atedi-2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Atedi-3.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Atedi-4.png" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Atedi-5.png" alt="Fifth slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#project1Carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#project1Carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Planning - ACTEMIUM ST-LO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lors de mon stage de deuxième année de BTS chez Actemium ST-Lô, j'ai utilisé Symfony pour créer un système de gestion des plannings des employés, répondant ainsi aux attentes de mon maître de stage.</p>
+                    <div id="project2Carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/Actemium-1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/Actemium-2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#project2Carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#project2Carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">Commande - THIBAUT Vire</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Mon stage de première année chez THIBAUT à Vire impliquait l'adaptation d'une application existante, destinée à plusieurs systèmes d'exploitation (Android, iOS, Windows) et compatible avec des tablettes. J'ai utilisé Xamarin malgré mes compétences limitées dans ce domaine, et ai abouti à une solution satisfaisante mais modeste.</p>
+                    <div id="project3Carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/no-image.png" alt="First slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#project3Carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#project3Carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Blog End -->
 
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
+    <!-- Veille Start -->
+    <div class="container-fluid py-5" id="veille">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Veille Technologiques</h1>
+                <h1 class="position-absolute text-uppercase text-primary">l'Intelligence Artificielle</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Qu'est ce que l'Intelligence Artificielle ?</h3>
+                    <p>L'intelligence artificielle (IA) est un domaine de l'informatique et de l'ingénierie qui vise à créer des systèmes capables de réaliser des tâches qui nécessitent normalement l'intelligence humaine. Ces tâches incluent, mais ne sont pas limitées à, la reconnaissance de la parole, la compréhension du langage naturel, la prise de décision, la résolution de problèmes, la reconnaissance des objets et des visages, ainsi que l'apprentissage automatique.</p>
+                    <h3 class="mb-4">Les Raisons de s'inquiéter</h3>
+                    <b>1 - Perte d'emplois :</b>
+                        <ul>
+                            <li>Automatisation : L'automatisation des tâches peut mener à la disparition de certains emplois, en particulier ceux qui sont répétitifs et routiniers. Cela pourrait entraîner des bouleversements économiques et sociaux importants.</li>
+                        </ul>
+
+                        <b>2 - Sécurité et confidentialité :</b>
+                        <ul>
+                            <li>Collecte de données : L'IA repose souvent sur de grandes quantités de données personnelles, ce qui pose des risques pour la vie privée et la sécurité des individus.</li>
+                            <li>Cyberattaques : Les systèmes d'IA peuvent être vulnérables aux cyberattaques, ce qui peut avoir des conséquences graves sur la sécurité des infrastructures critiques.</li>
+                        </ul>
+
+                        <h3 class="mb-4">Les raisons d'être optimiste</h3>
+                        <b>1 - Améliorations dans la vie quotidienne :</b>
+                        <ul>
+                            <li>Santé et médecine : L'IA a le potentiel de révolutionner les soins de santé en améliorant le diagnostic, en personnalisant les traitements et en accélérant la recherche médicale.</li>
+                            <li>Efficacité et commodité : Comme mentionné précédemment, l'IA peut rendre de nombreuses tâches quotidiennes plus faciles et plus efficaces, améliorant ainsi la qualité de vie.</li>
+                        </ul>
+                        
+                        <b>2 - Sécurité et protection :</b>
+                        <ul>
+                            <li>Détection de fraudes : L'IA peut aider à identifier et prévenir les fraudes plus efficacement que les méthodes traditionnelles.</li>
+                            <li>Surveillance de la sécurité : Les systèmes de surveillance intelligents peuvent améliorer la sécurité publique en détectant les comportements suspects et en alertant les autorités en temps réel.</li>
+                        </ul>
+                        
+                        <b>3 - Progrès technologiques et scientifiques :</b>
+                        <ul>
+                            <li>Recherche et innovation : L'IA peut accélérer la découverte scientifique en analysant rapidement de vastes ensembles de données et en identifiant des modèles complexes.</li>
+                        </ul>
+
+                        </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">L'Utilisation dans le quotidien</h3>                      
+                        <p>Voici quelques-uns des principaux intérêts et bénéfices :</p>
+
+                            <b>1 - Amélioration de l'efficacité et de la commodité :</b>
+                            
+                            <ul>
+                                <li>Assistants virtuels : Les assistants virtuels comme Siri, Google Assistant, et Alexa peuvent aider avec des tâches quotidiennes telles que la gestion des calendriers, la recherche d'informations, et le contrôle des appareils domestiques.</li>
+                                <li>Automatisation des tâches répétitives : L'IA peut automatiser des tâches répétitives et chronophages, libérant ainsi du temps pour des activités plus importantes ou agréables.</li>
+                            </ul>
+
+                            <b>2 - Accès à une information et à des services personnalisés :</b>
+
+                            <ul>
+                                <li>Recommandations personnalisées : Les plateformes de streaming (comme Netflix, Spotify) et les sites de commerce en ligne (comme Amazon) utilisent des algorithmes d'IA pour recommander des films, de la musique ou des produits basés sur les préférences et comportements passés.</li>
+                                <li>Santé et bien-être : Les applications de santé utilisent l'IA pour offrir des conseils personnalisés sur l'alimentation, l'exercice, et la gestion du stress, et pour surveiller les signes vitaux.</li>
+                            </ul>
+
+                            <b>3 - Amélioration de la communication et de l'interaction :</b>
+                            
+                            <ul>
+                                <li>Traduction automatique : Des outils comme Google Translate permettent la communication instantanée entre personnes parlant différentes langues.</li>
+                                <li>Correction et suggestion de texte : Les logiciels de traitement de texte et les applications de messagerie utilisent l'IA pour corriger automatiquement les fautes d'orthographe et de grammaire et suggérer des améliorations stylistiques.</li>
+                            </ul>
+
+                            <b>4 - Sécurité et protection :</b>
+                            
+                            <ul>
+                                <li>Détection de fraudes : Les systèmes bancaires et financiers utilisent l'IA pour détecter des transactions frauduleuses et protéger les utilisateurs contre les activités malveillantes.</li>
+                                <li>Surveillance de la maison : Les systèmes de sécurité domestique intelligents utilisent des caméras et des capteurs activés par l'IA pour surveiller les domiciles et alerter les propriétaires en cas d'intrusion.</li>
+                            </ul>
+                            
+                            <b>5 - Éducation et apprentissage :</b>
+                            <ul>
+                                <li>Tutoriels et aides personnalisées : Les plateformes d'apprentissage en ligne utilisent l'IA pour offrir des cours personnalisés et des aides adaptées au niveau et au rythme de chaque étudiant.</li>
+                                <li>Ressources éducatives : Les outils basés sur l'IA peuvent fournir des ressources éducatives adaptées, des exercices interactifs, et des retours immédiats pour améliorer l'apprentissage.</li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Veille End -->
+
+    <div class="container-fluid py-5" id="certifications">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Certifications</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Certifications</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <img class="img-fluid mx-auto mb-3" src="img/PIX.png" alt="PIX Certification">
+                            <p class="certification-text">Certification PIX</p>
+                        </div>
+                        <div class="text-center">
+                            <img class="img-fluid mx-auto mb-3" src="img/ANSSI.png" alt="ANSSI Certification">
+                            <p class="certification-text">Certification ANSSI</p>
+                        </div>
+                        <div class="text-center">
+                            <img class="img-fluid mx-auto mb-3" src="img/ROOT-ME.png" alt="ROOT-ME Certification">
+                            <p class="certification-text">J'ai également quelque bases sur ROOT-ME</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+    
 
+   
 
     <!-- Footer Start -->
-    <!-- <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://github.com/RomainTrbs"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/romain-tirbois-322016223/"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
+                <a class="text-white" href="mailto:romaintirbois@ik.me">Romain TIRBOIS</a>
                 <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
+                <a class="text-white" href="mailto:romaintirbois@ik.me">romaintirbois@ik.me</a>
                 <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
+                <span class="text-white">+33 7 68 63 60 20</span>
             </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Vire - NORMANDIE</a>
+            </div>
         </div>
-    </div> -->
+    </div>
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
